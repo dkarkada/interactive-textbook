@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Libre+Franklin|Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="resources/stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="banner">
+        <div class="stars"></div>
+        <div class="twinkling">
+            <h3>a conceptual guide to</h3>
+            <h1>ASTROPHYSICS</h1>
+        </div>        
+    </div>
+    <div id="book">
+        <div class="levelbuttons">
+            <div class="levelbutton selected">
+                <div class="easy">BEGINNER</div>
+            </div>
+            <div class="levelbutton">
+                <div class="medium">INTERMEDIATE</div>
+            </div>
+            <div class="levelbutton">
+                <div class="hard">ADVANCED</div>
+            </div>
+        </div>
+        <section class="easy">
+            <div class="barbox"><div class="bar"></div></div>
+            <div class="sectiontext">
+                <h2> What is this? </h2>
+                <p>
+                    My goal here is to write a conceptual guide to astronomy and astrophysics aimed at the high-school level. I hope it’s accessible to people who are learning about astronomy for the first time; simultaneously, I hope it’s still interesting and useful to those of you who’ve had previous exposure.
+                </p>
+                <div class="center">
+                    <div class="imptbox">
+                        \[E=h\nu=\frac{hc}{\lambda}\]
+                    </div>
+                </div>
+                <p>
+                    To accommodate a wide range of prior skill level, I’m experimenting with a new reading format. Sections are color-coded to represent the intended reading level. Intermediate and advanced information is collapsed by default, but can be expanded by toggling the triangular icon:
+                </p>
+            </div>
+        </section>
+        <section class="medium hidden">
+            <div class="barbox"><div class="bar"></div></div>
+            <div class="sectiontext">
+                <p>A light blue bar means intermediate-level content. Click the bar to collapse it again.</p>
+            </div>
+        </section>
+        <section class="hard hidden">
+            <div class="barbox"><div class="bar"></div></div>
+            <div class="sectiontext">
+                <p>Dark blue means advanced content.</p>
+            </div>
+        </section>
+        <section class="easy">
+            <div class="barbox"><div class="bar"></div></div>
+            <div class="sectiontext">
+                <p>
+                    You can also pre-select your reading level at the top of each page, which auto-expands the relevant sections.
+                </p>
+                <p>
+                    When I want to mention something in passing or remind you of something, I use footnotes. Hover over the <span class="footlink">softly underlined text</span><span class="footnote">This is a footnote!</span> to read the footnote. Hopefully this makes it easier to read useful comments without having to go back and forth between the footer and the main text.
+                </p>
+                <p>
+                    I try to explain things in conceptual terms first, getting to the details later. So even if you consider yourself an advanced reader, I recommend reading through all the sections. It makes the reading experience more fluid and reinforces central concepts in your mental map of astrophysics.
+                </p>
+                <p>
+                    Every so often, I put in some flashcards to review. Click to go through the set. You can ignore them if you want. Of course, it’s better if you don’t.
+                </p>
+                <article class="flashcards-container">
+                    <div class="flashcard">
+                        <div class="q">What do the colored bars represent?</div>
+                        <div class="a">Reading level. Light gray is beginner, light blue is intermediate, and dark blue is advanced.</div>
+                        <div class="cover"></div>
+                    </div>
+                    <div class="flashcard">
+                        <div class="q">How do you view footnotes?</div>
+                        <div class="a">Hover over the softly underlined text.</div>
+                        <div class="cover"></div>
+                    </div>
+                    <div class="flashcard-check fas fa-check"></div>
+                </article>
+                <p>
+                    This resource was developed with the Science Olympiad Astronomy event in mind. The information here comes mainly from An Introduction to Modern Astrophysics by Carroll and Ostlie. I pulled some stuff from astrophysics classes I’ve taken (both undergraduate and graduate level).
+                </p>
+            </div>
+        </section>
+    </div>
+    <div class="banner foot">
+        <div class="footerwing"></div>
+        <span class="copyright">
+        &copy; Dhruva Karkada. All rights reserved.</span>
+        <div class="footerwing">
+            <a href="https://cs.utexas.edu/~dkarkada"><span class="icon fas fa-link"></span></a>
+            <a href="https://twitter.com/dkarkada_"><span class="icon fab fa-twitter"></span></a>
+            <a href="https://m.me/dhruva.karkada"><span class="icon fab fa-facebook-messenger"></span></a>
+        </div>
+    </div>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <script src="resources/jquery-3.4.1.min.js"></script>
+    <script src="resources/script.js"></script>
+</body>
+
+</html>
